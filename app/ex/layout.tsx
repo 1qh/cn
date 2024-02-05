@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from '@/components/theme-switcher'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -24,6 +25,7 @@ interface ExamplesLayoutProps {
 export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
   return (
     <>
+      <ThemeSwitcher />
       <div className='container relative'>
         <PageHeader>
           <Announcement />
